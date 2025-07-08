@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>APIMS-OPS Progress Report Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .banner {
+      background: url('your-banner.jpg') center/cover no-repeat;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5em;
+      margin: 0;
+      padding: 0 20px;
+      color: #14532d;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 1.6em;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    td:first-child {
+      width: 80%;
+    }
+
+    .zoom-count {
+      font-weight: bold;
+      text-align: right;
+      color: #1abc9c;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .zoom-count:hover {
+      transform: scale(1.3);
+      color: #004d80;
+    }
+
+    .external-link {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    .external-link:visited {
+      color: #1e6091;
+    }
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      font-size: 1.3em;
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .card li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>APIMS-OPS Metrics Monitor</h1>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h2>H1 2025 – Microservices Operations & Monitoring Report</h2>
+
+    <!-- Key Metrics Table -->
+    <section>
+      <div class="section-title"><span class="icon">🎯</span> Key Metrics</div>
+      <table>
+        <tr>
+          <td><span class="icon">❗</span>
+            <a href="https://spark.at.sky/now/nav/ui/classic/params/target/incident_list.do%3Fsysparm_query%3D..." target="_blank" class="external-link">
+              Incidents Received (P1 & P2)
+            </a>
+          </td>
+          <td class="zoom-count">1</td>
+        </tr>
+        <tr>
+          <td><span class="icon">🛑</span>
+            <a href="https://spark.at.sky/now/nav/ui/classic/params/target/incident_list.do%3Fsysparm_query%3D..." target="_blank" class="external-link">
+              Incidents Received (P3 & P4)
+            </a>
+          </td>
+          <td class="zoom-count">64</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📞</span>
+            <a href="callouts.html" class="external-link" target="_blank">Callouts</a>
+          </td>
+          <td class="zoom-count">289</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📈</span>
+            <a href="https://sky.atlassian.net/wiki/spaces/CRM/pages/4094296714/..." class="external-link" target="_blank">Monitoring Requests Shared</a>
+          </td>
+          <td class="zoom-count">21</td>
+        </tr>
+        <tr>
+          <td><span class="icon">✅</span>
+            <a href="monitoring.html" class="external-link" target="_blank">Monitoring Requests Implemented</a>
+
+          </td>
+          <td class="zoom-count">12</td>
+        </tr>
+        <tr>
+          <td><span class="icon">📞</span>
+            <a href="https://sky.atlassian.net/jira/dashboards/14265" class="external-link" target="_blank">JIRA Ad-hoc Tasks Logged</a>
+          </td>
+          <td class="zoom-count">232</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Highlights Grid -->
+    <div class="grid-container">
+      <div class="card">
+        <h3>🎉 Recent Wins</h3>
+        <ul>
+          <li>Intern onboarded and KT sessions completed</li>
+          <li>Lower environment issues addressed before every production release</li>
+          <li>JIRA Dashboard for Ops now live and tracking all ad-hoc activities</li>
+          <li>Improved MS-level callout incident resolved time</li>
+          <li>Automated daily SLA incident reporting implemented</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📈 Emerging Trends</h3>
+        <ul>
+          <li>Decrease in callouts from MS due to better alerting</li>
+          <li>Faster response times on high-priority incidents</li>
+          <li>Reduced manual reporting effort</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>👥 Team Efforts</h3>
+        <ul>
+          <li>Intern engagement: shadowing, documentation tasks</li>
+          <li>Cross-team collaboration on release stability</li>
+          <li>Proactive health checks initiated during non-peak hours</li>
+        </ul>
+      </div>
+        <div class="card" style="width: 300%;">
+        <h3>🧭 What's Next</h3>
+        <ul>
+          <li>We are launching a Big Screen Monitoring solution to provide enhanced real-time visibility into microservices performance, incident trends, and critical operational metrics.</li>
+          <li>SOP refinements for incident handling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

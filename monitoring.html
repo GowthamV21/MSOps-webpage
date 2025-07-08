@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoring Requests Implemented</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f7f5;
+      margin: 0;
+      padding: 40px;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0f766e;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    li strong {
+      color: #0f766e;
+    }
+
+    ul ul {
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+
+    .sub-item {
+      font-size: 16px;
+      color: #374151;
+    }
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      li {
+        font-size: 16px;
+      }
+
+      .sub-item {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📊 Monitoring Requests Implemented</h1>
+
+    <ul>
+      <li>🚀 <strong>PI25-1</strong> (11 requirements given, 5 completed)
+        <ul>
+          <li class="sub-item">📌 Lag Detection in Pub/Sub: Date Field Comparison Metrics</li>
+          <li class="sub-item">📌 Removal of obsolete mail alerts</li>
+          <li class="sub-item">📌 Container died alert</li>
+          <li class="sub-item">📌 Grafana alerts enabled for ns-apims-prod namespace.</li>
+          <li class="sub-item">📌 Callout disable</li>
+        </ul>
+      </li>
+
+      <li>⚙️ <strong>PI25-2</strong> (8 requirements given, 6 completed)
+        <ul>
+          <li class="sub-item">📊 DatasourceError DE - No Traffic / Data in Grafana dashboard</li>
+          <li class="sub-item">📊 Alerting on pubsub KO were improved (No false alert) </li>
+          <li class="sub-item">📊 Disable non prod pub-sub mail alerts</li>
+          <li class="sub-item">📊 Container died alert - Threshold changed from 4 hr to 1 hr</li>
+          <li class="sub-item">📊 Enablement of automated spark incident for no traffic on pubsub topics</li>
+          <li class="sub-item">📊 Updated new Pubsub topics for alerting</li>
+        </ul>
+      </li>
+
+      <li>🔧 <strong>PI25-3</strong> (3 requirement given)
+        <ul>
+          <li class="sub-item">📝 Need to create JIRA PRINC automatically for errors (MS) with some thresholds</li>
+          <li class="sub-item">📝 Microservice-based callout incident (Subject)</li>
+          <li class="sub-item">📝dashboard displaying key operational metrics, optimized for large screen displays</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
